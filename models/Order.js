@@ -17,5 +17,4 @@ const OrderSchema = new mongoose.Schema(
   },
   { timestamps: true }
 );
-
 module.express = mongoose.model("User", OrderSchema);
