@@ -38,14 +38,7 @@ Portfolio - EC website [Server Side]
 ビジネス情報や株価等を閲覧することができるニュースサイトです。\
  カテゴリ別に記事表示を変更することや、調べたい word で記事を検索することが出来ます。
 
-## 【Technologies used (使用技術)】
 
-── crypto-js@4.1.1
-── dotenv@16.0.0
-── express@4.17.3
-── jsonwebtoken@8.5.1
-── mongoose@6.2.8
-── nodemon@2.0.15
 
 Used API
 
