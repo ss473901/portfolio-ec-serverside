@@ -3,18 +3,22 @@ Portfolio - EC website [Server Side]
 
 ## 使用技術
 
-- React.js v17.0.1
-- react-router-dom 
-- node-sass 
-- axios v0.21.1
-
+─ crypto-js@4.1.1
+  
+─ dotenv@16.0.0
+  
+─ express@4.17.3
+  
+─ jsonwebtoken@8.5.1
+  
+─ mongoose@6.2.8
+  
+─ nodemon@2.0.15
 
 
 ## Deploy
 
-- Netlify(For client side)
-- Heroku(For server side)
-  
+- 
   
   # News-App
 
@@ -36,16 +40,12 @@ Portfolio - EC website [Server Side]
 
 ## 【Technologies used (使用技術)】
 
-- React.js v17.0.1\
-   (Hooks: useState, useEffect, useContext)
-- react-router-dom v0.21.1
-- Material-UI v4.11.3
-- node-sass v5.0.0
-- react-chartjs-2 v2.11.1
-- react-spinners v0.10.6
-- axios v0.21.1
-- Firebase v8.2.9\
-  (Authentication, CloudFirestore, Hosting)
+── crypto-js@4.1.1
+── dotenv@16.0.0
+── express@4.17.3
+── jsonwebtoken@8.5.1
+── mongoose@6.2.8
+── nodemon@2.0.15
 
 Used API
 
