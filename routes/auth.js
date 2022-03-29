@@ -36,14 +36,14 @@ router.post("/login", async (req, res) => {
     originalPassword !== req.body.password &&
       res.status(401).json("ユーザ認証に失敗しました");
 
-    // const accessToken = jwt.sign(
-    //   {
-    //     id: user._id,
-    //     isAdmin: user.isAdmin,
-    //   },
-    //   process.enc.JWT_SEC,
-    //   { expiresIn: "3d" }
-    // );
+    const accessToken = jwt.sign(
+      {
+        id: user._id,
+        isAdmin: user.isAdmin,
+      },
+      process.enc.JWT_SEC,
+      { expiresIn: "3d" }
+    );
 
     const { password, ...others } = user._doc;
     res.status(200).json(others);
