@@ -1,12 +1,15 @@
+const { verifyToken, verifyTokenAndAuthorization } = require("./verifyToken");
+
 const router = require("express").Router();
 
-router.get("/usertest", (req, res) => {
-  res.send("user test");
-});
-
-router.post("/userposttest", (req, res) => {
-  const username = req.body.username;
-  console.log(username);
+//UPDATE
+router.put("/:id", verifyTokenAndAuthorization, async (req, res) => {
+  if (req.body.password) {
+    req.body.password = CryptoJS.AES.encrypt(
+      req.body.password,
+      process.env.PASS_SEC
+    ).toString();
+  }
 });
 
 module.exports = router;
