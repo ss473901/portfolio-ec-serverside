@@ -13,6 +13,7 @@ router.post("/register", async (req, res) => {
       process.env.PASS_SEC
     ).toString(),
   });
+
   try {
     const savedUser = await newUser.save();
     res.status(201).json(savedUser);
@@ -21,7 +22,7 @@ router.post("/register", async (req, res) => {
   }
 });
 
-//JWTを使った LOGIN
+//LOGIN
 router.post("/login", async (req, res) => {
   try {
     const user = await User.findOne({
