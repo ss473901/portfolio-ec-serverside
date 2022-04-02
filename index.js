@@ -5,6 +5,7 @@ const dotenv = require("dotenv");
 const userRoute = require("./routes/user");
 const authRoute = require("./routes/auth");
 const productsRoute = require("./routes/product");
+const ordersRoute = require("./routes/order");
 
 app.use(express.json());
 
@@ -23,6 +24,7 @@ mongoose
 app.use("/api/users", userRoute);
 app.use("/api/auth", authRoute);
 app.use("/api/products", productsRoute);
+app.use("/api/orders", ordersRoute);
 
 app.listen(process.env.PORT || 5001, () => {
   console.log("サーバーが起動しました。");
