@@ -14,6 +14,8 @@ Portfolio - EC website [Server Side]
 ─ mongoose@6.2.8
   
 ─ nodemon@2.0.15
+  
+- stripe
 
 
 ## Deploy
